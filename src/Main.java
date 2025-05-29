@@ -2,8 +2,7 @@ import java.util.regex.*;
 import java.io.*;
 public class Main {
     public static void main(String[] args) {
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter("regex.txt"));
-             BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("regex.txt"))){
             String text = rexs();
             if(!(text.isEmpty())){
                 bw.write(text);
